@@ -1,0 +1,35 @@
+﻿GET {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+###
+POST {{TodoApi_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name": "Buy groceries",
+  "isComplete": false
+}
+
+###
+GET {{TodoApi_HostAddress}}/todoitems/complete
+Content-Type: application/json
+
+###
+GET {{TodoApi_HostAddress}}/todoitems/3
+Content-Type: application/json
+
+###
+PUT {{TodoApi_HostAddress}}/todoitems/3
+Content-Type: application/json
+
+{
+  "name": "Buy groceries",
+  "isComplete": true
+}
+
+###
+DELETE {{TodoApi_HostAddress}}/todoitems/1
+Content-Type: application/json
+
+###
+
